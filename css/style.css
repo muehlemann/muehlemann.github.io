@@ -1,0 +1,55 @@
+/* TAGS 
+*/
+
+* {
+	font-family: 'Maven Pro';
+}
+
+body {
+	min-width: 670px;
+	/*background: url('../img/background.png');*/
+}
+
+h1, h3, h5 {
+	font-family: "Arvo";
+}
+
+.row {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* SECTION 1 - ABOUT 
+*/
+#about {
+	margin-top: 200px;
+}
+
+	.about-img {
+		float: left;
+		display: block;
+	   
+		height: 180px;
+		width: 180px;
+		border-radius: 90px;
+		margin-right: 25px;
+	}
+
+	.about-title {
+		display: block;
+		font-family: 'Arvo';
+	}
+
+	.about-link {
+		font-family: "Arvo";
+		color: #aaa;
+		text-decoration: none;
+		padding: 10 10 10 0px;
+	}
+
+	.about-body {
+		padding-top: 10px;
+		font-size: 18;
+	}
+
+

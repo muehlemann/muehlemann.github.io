@@ -1,0 +1,17 @@
+#thumbnailwrapper {
+    font-size: 15px
+    text-align: center;
+}
+
+#artiststhumbnail {
+    margin-top: 20px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#artiststhumbnail a img {
+    display : block;
+    margin : auto;
+    border-radius: 50%;
+}

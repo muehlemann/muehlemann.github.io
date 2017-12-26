@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>M&uuml;hlemann</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Arvo|Maven+Pro" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="overlay"></div>
+
+			<!-- Sidebar -->
+			<?php include('sidebar.php') ?>
+
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				
+				<button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+					<span class="hamb-top"></span>
+					<span class="hamb-middle"></span>
+					<span class="hamb-bottom"></span>
+				</button>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-8 col-xs-offset-2">
+							<h1><i class="font-reenie-lg">My Apps</i></h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="row app">
+						<div class="col-xs-2 col-xs-offset-2">
+							<img src="img/apps/ec-logo.png" alt="view-source" class="app-img">
+							<h5 class="font-cambay-sm">
+								<a href="https://itunes.apple.com/app/id1072476482" target="_blank" class="app-text">Endicott Student</a>
+							</h5>
+							<p>
+								This is the go to App for any Endicott College student. Check in with your class 
+								schedule and see what is being served at the Callahan for lunch!
+							</p>
+							<a class="btn btn-warning" href="mailto:mmueh164@mail.endicott.com?Subject=Endicott Student - App Support" target="_top">Contact Support</a>
+						</div>
+						<div class="col-xs-2 col-xs-offset-1">
+							<img src="img/apps/todo-logo.png" alt="todo" class="app-img">
+							<h5 class="font-cambay-sm">
+								<a href="https://itunes.apple.com/app/id961358911" target="_blank" class="app-text">ToDo</a>
+							</h5>
+							<p>
+								ToDo is a simple task management App that makes it easy to see the progress 
+								of a project as well as share the details about the project with others.
+							</p>
+							<a class="btn btn-warning" href="mailto:mmueh164@mail.endicott.com?Subject=ToDo - App Support" target="_top">Contact Support</a>
+						</div>
+						<div class="col-xs-2 col-xs-offset-1">
+							<img src="img/apps/vs-logo.png" alt="view-source" class="app-img">
+							<h5 class="font-cambay-sm">
+								<a href="https://itunes.apple.com/app/id592976076" target="_blank" class="app-text">View Source</a>
+							</h5>
+							<p>
+								View-Source has been updated to version 2.2, with HTML highlighting. It also now 
+								contains a more simplistic way to navigate between the website you are viewing and the HTML.
+							</p>
+							<a class="btn btn-warning" href="mailto:mmueh164@mail.endicott.com?Subject=View-Source - App Support" target="_top">Contact Support</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+</html>
