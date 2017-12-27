@@ -6,49 +6,38 @@
 }
 
 body {
-	min-width: 670px;
+	/*min-width: 670px;*/
 }
 
-h1, h2, h3, h5 {
+h1 {
+	margin-top: 150px;
+	display: block;
+	font-family: 'Arvo';
+}
+
+h2, h3, h4, h5 {
 	font-family: "Arvo";
 }
 
+h5 {
+	color: #888;
+}
+
+a {
+	font-family: "Arvo";
+	color: #aaa;
+	text-decoration: none;
+	padding: 10 10 10 0px;
+}
+
 .row {
+	padding-bottom: 10px; 
 	max-width: 1000px;
 	margin: auto;
 }
 
-/* SECTION 1 - ABOUT 
-*/
-#about {
-	margin-top: 200px;
-}
 
-	.about-img {
-		float: left;
-		display: block;
-	   
-		height: 180px;
-		width: 180px;
-		border-radius: 90px;
-		margin-right: 25px;
-	}
 
-	.about-title {
-		display: block;
-		font-family: 'Arvo';
-	}
 
-	.about-link {
-		font-family: "Arvo";
-		color: #aaa;
-		text-decoration: none;
-		padding: 10 10 10 0px;
-	}
-
-	.about-body {
-		padding-top: 10px;
-		font-size: 18;
-	}
 
 
