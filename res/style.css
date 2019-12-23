@@ -1,0 +1,149 @@
+/* TAGS
+*/
+
+* {
+	font-family: "Barlow Condensed";
+}
+
+body {
+	background: #222426;
+	margin: 0px;
+}
+
+hr  {
+	border-top: 1px solid #e2e4e6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Barlow";
+}
+
+a, a:focus  {
+	color: #929496;
+	font-family: "Barlow";
+	padding: 10 10 10 0px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #f2f4f6;
+	text-decoration: none;
+}
+
+.container {
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.row {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+/* MENU
+*/
+
+#menu {
+	background-color: #323436;
+	padding: 15px;
+}
+
+/* HEADER
+*/
+
+#header {
+	background-image: url("img/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	background-color: #c2c4c6;
+	padding: 150px 0px;
+}
+
+#header > div {
+	background-color: #222426;
+	max-width: 300px;
+	margin: 0px auto;
+	border: solid 5px #f2f4f6;
+	text-align: center;
+	opacity: 0.75;
+}
+
+#header > div > span:nth-child(1) {
+	margin-top: 15px;
+	font-size: 32px;
+	display: block;
+	color: #f2f4f6;
+	font-family: "Barlow";
+}
+
+#header > div > span:nth-child(2) {
+	margin-bottom: 15px;
+	font-size: 16px;
+	display: block;
+	color: #f2f4f6;
+	font-family: "Barlow";
+}
+
+/* ABOUT
+*/
+
+#about {
+	padding: 20px 20px;
+	background-color: #f2f4f6
+}
+
+#about > div {
+	margin: 0px auto;
+	text-align: center;
+}
+
+.about-part {
+  padding: 10px;
+	display: inline-block;
+	width: 250px;
+	text-align: left;
+}
+
+.about-part:nth-child(2) {
+	padding: 0px 50px;
+}
+
+.about-part > p, ul {
+	color: #545556;
+}
+
+/* WORK
+*/
+
+#work {
+	padding: 100px 150px;
+	background-color: #002233;
+}
+
+#work > div > h2 {
+	color: #ff9300;
+}
+
+#work > div > p {
+	color: #d4d6d8;
+}
+
+/* INTERESTS
+*/
+
+#interests {
+	padding: 100px 150px;
+	background-color: #113311;
+}
+
+#interests > div > h2 {
+	color: #f2f4f6;
+}
