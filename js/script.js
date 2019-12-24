@@ -1,0 +1,80 @@
+var albums = [
+	{
+		"artist": "Tame Impala",
+		"title": "Currents",
+		"cover": "tame-impala-currents.png"
+	},
+	{
+		"artist": "Pink Floyd",
+		"title": "Wish You Were Here",
+		"cover": "pink-floyd-wish-you-were-here.png"
+	},
+	{
+		"artist": "Pink Floyd",
+		"title": "The Dark Side of the Moon",
+		"cover": "pink-floyd-the-dark-side-of-the-moon.png"
+	},
+	{
+		"artist": "Logic",
+		"title": "Young Sinatra IV",
+		"cover": "logic-ysiv.png"
+	},
+	{
+		"artist": "Logic",
+		"title": "The Incredible True Story",
+		"cover": "logic-thei-ncredible-true-story.jpg"
+	},
+	{
+		"artist": "Led Zeppelin",
+		"title": "Led Zeppelin II",
+		"cover": "led-zeppelin-ii.jpg"
+	},
+	{
+		"artist": "Jimi Hendrix",
+		"title": "Electric Ladyland",
+		"cover": "jimi-hendrix-electric-ladyland.jpg"
+	},
+	{
+		"artist": "Greta Van Fleet",
+		"title": "From The Fires",
+		"cover": "greta-van-fleet-from-the-fires.jpg"
+	},
+	{
+		"artist": "The Beatles",
+		"title": "Abbey Road",
+		"cover": "beatles-abbey-road.jpg"
+	},
+];
+
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+
+docReady(function() {
+
+	var container = document.getElementById("music-container");
+
+	for (var i = 0; i < albums.length; i++) {
+		var div = document.createElement("div");
+		div.classList.add("album");
+
+		var img = document.createElement("img");
+		img.src = "res/img/albums/" + albums[i].cover;
+
+		var h5 = document.createElement("h5");
+		h5.innerHTML = albums[i].title + "<br/>" + albums[i].artist;
+
+		div.appendChild(img);
+		div.appendChild(h5);
+
+		container.appendChild(div);
+	}
+})
+
+

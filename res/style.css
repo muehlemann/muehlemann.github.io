@@ -124,8 +124,13 @@ a:hover {
 */
 
 #work {
-	padding: 100px 150px;
+	padding: 50 50px;
 	background-color: #002233;
+}
+
+#work > div {
+	margin: 0px auto;
+	max-width: 700px;
 }
 
 #work > div > h2 {
@@ -139,11 +144,47 @@ a:hover {
 /* INTERESTS
 */
 
-#interests {
-	padding: 100px 150px;
-	background-color: #113311;
+#music {
+	padding: 50 50px;
+	background-color: #545556;
+	margin: 0px auto;
+	text-align: center;
 }
 
-#interests > div > h2 {
+#music > h2 {
+	color: #f2f4f6;
+	margin-bottom: 50px;
+}
+
+#music-container {
+	max-width: 570px;
+	text-align: center;
+	display: inline-block;
+}
+
+#music-container > div {
+	margin: 0px auto;
 	color: #f2f4f6;
 }
+
+.album {
+	float: left;
+	padding: 20px 20px;
+}
+
+.album > img {
+	width: 150px;
+	height: 150px;
+
+		-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
