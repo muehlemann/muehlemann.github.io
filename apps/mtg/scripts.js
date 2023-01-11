@@ -12,6 +12,7 @@ function drawBackground(id, event) {
     return;
   }
 
+  // Get last char of id tag
   var pos = event.target.id.split('-').slice(-1).pop()
   document.getElementById(id).parentNode.style.backgroundColor = colorArray[pos]
 }
@@ -48,4 +49,7 @@ window.addEventListener("load", () => {
     // Draw after reset
     drawLife(playerOneLife, playerTwoLife);
   });
+
 });
+
+window.scroll(0, 1);
