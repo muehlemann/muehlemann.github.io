@@ -21,6 +21,7 @@ body {
   height: calc(50% - 100px);
 
   background: #242628;
+  animation: fadeIn 5s;
 }
 
 .player > div {
@@ -58,4 +59,11 @@ body {
 
 .colors > img {
   margin: 10px 10px 10px 0px;
+}
+
+/* Key-frame Blocks */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

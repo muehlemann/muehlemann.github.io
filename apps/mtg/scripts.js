@@ -51,5 +51,3 @@ window.addEventListener("load", () => {
   });
 
 });
-
-window.scroll(0, 1);
