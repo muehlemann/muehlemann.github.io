@@ -63,12 +63,11 @@ a:hover {
 }
 
 #header > div {
-	background-color: #222426;
+	background-color: rgba(34, 36, 38, 0.75);
 	max-width: 300px;
 	margin: 0px auto;
 	border: solid 5px #f2f4f6;
 	text-align: center;
-	opacity: 0.75;
 }
 
 #header > div > span:nth-child(1) {
@@ -86,11 +85,3 @@ a:hover {
 	color: #f2f4f6;
 	font-family: "Barlow";
 }
-
-
-
-
-
-
-
-
