@@ -103,10 +103,8 @@ function loadMusic() {
 	}
 }
 
-function loadInjection() {
-	function a(a,b){var c=/^(?:file):/,d=new XMLHttpRequest,e=0;d.onreadystatechange=function(){4==d.readyState&&(e=d.status),c.test(location.href)&&d.responseText&&(e=200),4==d.readyState&&200==e&&(a.outerHTML=d.responseText)};try{d.open("GET",b,!0),d.send()}catch(f){}}var b,c=document.getElementsByTagName("*");for(b in c)c[b].hasAttribute&&c[b].hasAttribute("data-include")&&a(c[b],c[b].getAttribute("data-include"));
-}
-
+/* Adds js functionality to the menu element.
+*/
 function loadMenu() {
 
 	document.getElementById("apps").addEventListener('click', (event) => {
@@ -122,13 +120,20 @@ function loadMenu() {
 
 }
 
-/* Runs on window load.
+/* Due to the usage of the csi.js script not all of the DOM is availiable when "onload" is called.
 */
-window.addEventListener("load", () => {
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
 
-	loadInjection()
+docReady(function() {
 	loadMenu();
 	loadMusic();
-
 });
 
