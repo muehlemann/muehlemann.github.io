@@ -120,19 +120,9 @@ function loadMenu() {
 
 }
 
-/* Due to the usage of the csi.js script not all of the DOM is availiable when "onload" is called.
+/* Runs on window load.
 */
-function docReady(fn) {
-    // see if DOM is already available
-    if (document.readyState === "complete" || document.readyState === "interactive") {
-        // call on next available tick
-        setTimeout(fn, 1);
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
-    }
-}
-
-docReady(function() {
+window.addEventListener("load", () => {
 	loadMenu();
 	loadMusic();
 });
