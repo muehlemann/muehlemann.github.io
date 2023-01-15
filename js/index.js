@@ -81,18 +81,9 @@ var albums = [
 	}
 ];
 
-function docReady(fn) {
-	// see if DOM is already available
-	if (document.readyState === "complete" || document.readyState === "interactive") {
-			// call on next available tick
-			setTimeout(fn, 1);
-	} else {
-		document.addEventListener("DOMContentLoaded", fn);
-	}
-}
-
-docReady(function() {
-
+/* Evaluates the list of albums and creates DOM elements for them.
+*/
+function loadMusic() {
 	var container = document.getElementById("music-container");
 
 	for (var i = 0; i < albums.length; i++) {
@@ -110,6 +101,29 @@ docReady(function() {
 
 		container.appendChild(div);
 	}
-})
+}
 
+function loadMenu() {
+
+	document.getElementById("apps").addEventListener('click', (event) => {
+		var appsMenu = document.getElementById("submenu");
+		var className = appsMenu.className;
+
+		if (className === "submenu-hide" || className === "") {
+			appsMenu.className = "submenu-show";
+		} else {
+			appsMenu.className = "submenu-hide";
+		}
+	});
+
+}
+
+/* Runs on window load.
+*/
+window.addEventListener("load", () => {
+
+	loadMenu();
+	loadMusic();
+
+});
 
