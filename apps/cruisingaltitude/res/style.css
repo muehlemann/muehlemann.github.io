@@ -1,0 +1,167 @@
+/* TAGS
+*/
+
+* {
+	font-family: "Quicksand";
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0px;
+	background-color: #323436;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Quicksand";
+}
+
+a, a:focus  {
+	color: #f2f4f6;
+	font-family: "Quicksand";
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	margin: 0px;
+}
+
+.row {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+/* HERO
+*/
+
+#hero {
+    height: 90%;
+
+	background: rgb(2, 0, 36);
+	background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgba(234,51,247,1) 60%, rgba(0,212,255,1) 100%);
+	background-repeat: no-repeat;
+}
+
+#hero-logo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero-logo > div {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 225 0 15 0px;
+}
+
+#hero-logo > div > div {
+	margin: auto 15;
+}
+
+
+#hero-logo > div > div > span {
+	font-size: 20px;
+	font-style: bold;
+	font-family: "Quicksand";
+
+	color: #f2f4f6;
+}
+
+#hero-logo > div > img {
+	width: 60px;
+
+	filter: drop-shadow(0 0 0.75rem purple);
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; 
+}
+
+#hero-text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero-text > div {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#hero-text > div > a {
+	background-color: rgba(244, 246, 248, 0.1);
+	border-radius: 8px;
+
+	padding: 8px;
+	margin: 8 8 8 0px;
+}
+
+#hero-text > div > a:hover {
+	background-color: rgba(244, 246, 248, 0.5);
+}
+
+#hero-text > div > a > img {
+	height: 20px;
+	width: 20px;
+}
+
+/* FOOTER
+*/
+
+#footer {
+	background-color: #F6F6F6;
+
+	padding: 50 0px;
+}
+
+#footer > div {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#footer > div > h1 {
+	color: #f2f4f6;
+	font-size: 25px;
+	font-family: "Vibur", sans-serif;
+	text-align: center;
+
+	padding: 0 0 30 0px;
+
+	color: #fff;
+  	text-shadow:
+	  0 0 1px #fff,
+	  0 0 11px #f09,
+	  0 0 21px #f09,
+	  0 0 30px #f09,
+	  0 0 36px #f09,
+	  0 0 41px #f09;
+}
+
+#footer > div > a {
+	color: #222222;
+	font-size: 12px;
+	text-align: center;
+
+	padding: 5 0 0 0px;
+}

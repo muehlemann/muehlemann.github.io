@@ -1,0 +1,155 @@
+/* HEADER
+*/
+
+#header {
+	background-color: #b00ba2;
+}
+
+#header > div {
+	background-color: #FFFFFF55;
+	text-align: center;
+	padding: 30 50px;
+}
+
+.header-item {
+	padding: 10 10 10 0px;
+}
+
+/* BLOG
+*/
+
+#blog {
+	background-color: #b00ba2;
+}
+
+#blog > h2 {
+	padding: 50 0 0 0px;
+	margin: 0 50 0 50px;
+
+	font-family: "Abril Fatface", serif;
+	color: #ee4be0;
+}
+
+#blog-container {
+  	overflow-x: scroll;
+    overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.blog-post {
+	background-color: #E2E4E6;
+	display: inline-block;
+	
+	height: 150px;
+	width: 350px;
+	
+	margin: 50 0 50 50px;
+	padding: 25px;
+
+	filter: drop-shadow(0 0 0.9rem #49044f55);
+	border-radius: 10px;
+}
+
+.blog-post:hover {
+	filter: drop-shadow(0 0 0.9rem #49044fFF);
+}
+
+.blog-post:last-child {
+	margin: 50px;
+}
+
+.blog-text {
+	display: block;
+	font-family: "Ariel", sans-serif;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+
+	margin: 15px;
+}
+
+.blog-title {
+	font-size: 30px;
+
+	color: #000000;
+}
+
+.blog-title {
+	font-family: "Abril Fatface", serif;
+	font-size: 30px;
+
+	color: #000000;
+}
+
+.blog-date {
+	text-transform: uppercase;
+  	font-weight: bold;
+  	font-size: 12px;
+
+  	color: #1d044f;
+}
+
+.blog-tags {
+	display: inline-block;
+	margin: 0 5 0 0px;
+	padding: 3 10px;
+	background-color: #d2d4d6;
+	border-radius: 10px;
+	color: #333;
+}
+
+/* WELCOME
+*/
+
+#welcome {
+	background-color: #230345;
+    
+    padding: 50px;
+    color: #F2F4F6;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-montra {
+	background-image: url('img/plane.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	margin: 50px;
+	padding: 25 50px;
+
+	border: 3px solid #FFF;
+}
+
+#welcome-montra > p {
+	font-family: "Abril Fatface", serif;
+	font-size: 30px;
+    color: #F2F4F6;
+}
+
+#welcome-statement {
+	max-width: 400px;
+
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+
+/* PHILOSOPHY
+*/
+
+#philosophy {
+	background-color: #E4E6E8;
+
+	padding: 50px;
+	color: #A2A4A6;
+
+	box-shadow:         0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
+	-webkit-box-shadow: 0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
+	-moz-box-shadow:    0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
+}
