@@ -40,7 +40,7 @@ class Hero extends HTMLElement {
 						<div>
 							<img src="res/img/icon.png">
 							<div>
-								<span>Crusing Altitude</span>
+								<span>Cruising Altitude</span>
 								<br>
 								<span>The Captain</span>
 							</div>
