@@ -1,4 +1,7 @@
-/* HEADER
+/*
+===============================================================================
+HEADER
+===============================================================================
 */
 
 #header {
@@ -8,114 +11,36 @@
 #header > div {
 	background-color: #FFFFFF55;
 	text-align: center;
-	padding: 30 50px;
+	padding: 30 0px;
 }
 
 .header-item {
-	padding: 10 10 10 0px;
+	margin: 50 10px;
+
+	border-bottom: 2px solid #FFF;
 }
 
-/* BLOG
-*/
-
-#blog {
-	background-color: #b00ba2;
-}
-
-#blog > h2 {
-	padding: 50 0 0 0px;
-	margin: 0 50 0 50px;
-
-	font-family: "Abril Fatface", serif;
-	color: #ee4be0;
-}
-
-#blog-container {
-  	overflow-x: scroll;
-    overflow-y: hidden;
-	white-space: nowrap;
-}
-
-.blog-post {
-	background-color: #E2E4E6;
-	display: inline-block;
-	
-	height: 150px;
-	width: 350px;
-	
-	margin: 50 0 50 50px;
-	padding: 25px;
-
-	filter: drop-shadow(0 0 0.9rem #49044f55);
-	border-radius: 10px;
-}
-
-.blog-post:hover {
-	filter: drop-shadow(0 0 0.9rem #49044fFF);
-}
-
-.blog-post:last-child {
-	margin: 50px;
-}
-
-.blog-text {
-	display: block;
-	font-family: "Ariel", sans-serif;
-	text-overflow: ellipsis;
-	word-wrap: break-word;
-	overflow: hidden;
-
-	margin: 15px;
-}
-
-.blog-title {
-	font-size: 30px;
-
-	color: #000000;
-}
-
-.blog-title {
-	font-family: "Abril Fatface", serif;
-	font-size: 30px;
-
-	color: #000000;
-}
-
-.blog-date {
-	text-transform: uppercase;
-  	font-weight: bold;
-  	font-size: 12px;
-
-  	color: #1d044f;
-}
-
-.blog-tags {
-	display: inline-block;
-	margin: 0 5 0 0px;
-	padding: 3 10px;
-	background-color: #d2d4d6;
-	border-radius: 10px;
-	color: #333;
-}
-
-/* WELCOME
+/*
+===============================================================================
+WELCOME
+===============================================================================
 */
 
 #welcome {
 	background-color: #230345;
-    
-    padding: 50px;
-    color: #F2F4F6;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+	padding: 50px;
+	color: #F2F4F6;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 #welcome-montra {
-	background-image: url('img/plane.png');
+	background-image: url('img/other/plane.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -139,17 +64,219 @@
 	text-justify: inter-word;
 }
 
-
-/* PHILOSOPHY
+/*
+===============================================================================
+BLOG
+===============================================================================
 */
 
-#philosophy {
+#blog {
+	background-color: #b00ba2;
+	padding-bottom: 50px;
+
+	-webkit-box-shadow: 0 -10px 20px -10px rgba(34, 36, 38, 0.6) inset;
+	-moz-box-shadow: 0 -10px 20px -10px rgba(34, 36, 38, 0.6) inset;
+	box-shadow: 0 -10px 20px -10px rgba(34, 36, 38, 0.6) inset;
+}
+
+#blog > h2 {
+	padding: 50 0 0 0px;
+	margin: 0 50 0 50px;
+
+	font-family: "Abril Fatface", serif;
+	color: #ee4be0;
+}
+
+#blog-container {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+	/* Hide Scroll Bars */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+/* Hide Scroll Bars */
+#blog-container::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-post {
+	background-color: #E2E4E6;
+	display: inline-block;
+	
+	width: 350px;
+	overflow:auto;
+	margin: 50 0 50 50px;
+	border-radius: 10px;
+
+	filter: drop-shadow(0 0 0.9rem #49044f55);
+}
+
+.blog-post:hover {
+	filter: drop-shadow(0 0 0.9rem #49044fFF);
+}
+
+.blog-post:last-child {
+	margin: 50px;
+}
+
+.blog-text {
+	display: block;
+	font-family: "Ariel", sans-serif;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	overflow: hidden;
+
+	margin: 15px;
+}
+
+.blog-header {
+	margin: 0px;
+	padding: 15px;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-title {
+	margin: 150 0 0 0px;
+	font-family: "Abril Fatface", serif;
+	font-size: 30px;
+
+	color: #F2F4F6;
+}
+
+.blog-body {
 	background-color: #E4E6E8;
+}
 
-	padding: 50px;
-	color: #A2A4A6;
+.blog-date {
+	text-transform: uppercase;
+  	font-weight: bold;
+  	font-size: 12px;
 
-	box-shadow:         0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
-	-webkit-box-shadow: 0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
-	-moz-box-shadow:    0px 2px 10px 2px rgb(66, 68, 70, 0.9) inset;
+  	color: #1d044f;
+}
+
+.blog-tags {
+	display: inline-block;
+	margin: 0 5 0 0px;
+	padding: 3 10px;
+	background-color: #d2d4d6;
+	border-radius: 10px;
+	color: #333;
+}
+
+/*
+===============================================================================
+MORE
+===============================================================================
+*/
+
+#more {
+	background-image: url(img/other/more-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#more-container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 75 50px;
+
+	background-color: #F2F4F633;
+}
+
+/* MORE TITLE
+*/
+
+#more-titles {
+	min-width: 320px;
+}
+
+#more-titles > div {
+	padding: 25px;
+}
+
+.more-title {
+	display: block;
+	
+	font-family: 'Monoton';
+	font-size: 50px;
+	font-style: bold;
+	line-height: 1.5em;
+	color: #FFFFFF;
+
+	opacity: 0.3;
+}
+
+.more-title:hover {
+	opacity: 0.5;
+}
+
+.more-title[data-selected='true'] {
+	opacity: 1.0;
+}
+
+/* MORE ITEM
+*/
+
+#more-items {
+	min-width: 320px;
+	min-height: 480px;
+
+	background-color: rgba(246, 248, 250, 0.9);
+	filter: drop-shadow(0 0 0.75rem #222);
+
+	border-radius: 15px;
+}
+
+#more-items > div > span {
+	display: block;
+
+	padding: 0 25 5 25px;
+
+	font-size: 20px;
+}
+
+.more-items-header {
+	min-height: 200px;
+    margin-bottom: 25px;
+
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.more-items-header > img {
+	height: 80px;
+}
+
+.more-items-hide {
+	display: none;
+}
+
+#venues > .more-items-header {
+	background-color: #2e3548;
+}
+
+#artists > .more-items-header {
+	background-color: #285a64;
+}
+
+#records > .more-items-header {
+	background-color: #385c1f;
 }

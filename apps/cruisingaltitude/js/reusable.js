@@ -65,7 +65,7 @@ class Footer extends HTMLElement {
 
 						<main-social></main-social>
 
-						<a target="_blank" href="https://www.flaticon.com/free-icons">Icons created by Freepik - Flaticon</a>
+						<a target="_blank" href="https://www.flaticon.com/authors/freepik">Icons created by Freepik - Flaticon</a>
 						<a href="#">Crusing Altitude &copy; 2023</a>
 					</div>
 				</div>
