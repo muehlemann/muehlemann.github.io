@@ -40,30 +40,6 @@
 	padding-left: 17px;
 }
 
-/* WORK
-*/
-
-#vlog {
-	padding: 50 50px;
-	background-color: #002233;
-	margin: 0px auto;
-
-	-webkit-box-shadow: 0px 20px 20px -20px #121416 inset;
-	-moz-box-shadow: 0px 20px 20px -20px #121416 inset;
-	box-shadow: 0px 20px 20px -20px #121416 inset;
-}
-
-#vlog > div > h2 {
-	color: #ff9300;
-}
-
-#vlog > div > p {
-	color: #f2f4f6;
-}
-
-#vlog > div > iframe {
-	border-radius: 20px;
-}
 
 /* INTERESTS
 */
@@ -77,11 +53,6 @@
 	-webkit-box-shadow: 0px 20px 20px -20px #121416 inset;
 	-moz-box-shadow: 0px 20px 20px -20px #121416 inset;
 	box-shadow: 0px 20px 20px -20px #121416 inset;
-}
-
-#music > h2 {
-	color: #f2f4f6;
-	margin-bottom: 50px;
 }
 
 #music-container {

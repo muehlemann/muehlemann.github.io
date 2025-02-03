@@ -1,6 +1,6 @@
 var playerOneLife = 20;
 var playerTwoLife = 20;
-var colorArray = ["#B2AF8D", "#6992AB", "#7D7673", "#A16148", "#5B8565"];
+var colorArray = ["#F0EBCE", "#318ff3", "#0f1200", "#BE2121", "#228B22"];
 
 function drawLife(p1, p2) {
 	document.getElementById("player1-life").textContent = p1;

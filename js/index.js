@@ -103,27 +103,9 @@ function loadMusic() {
 	}
 }
 
-/* Adds js functionality to the menu element.
-*/
-function loadMenu() {
-
-	document.getElementById("apps").addEventListener('click', (event) => {
-		var appsMenu = document.getElementById("submenu");
-		var className = appsMenu.className;
-
-		if (className === "submenu-hide" || className === "") {
-			appsMenu.className = "submenu-show";
-		} else {
-			appsMenu.className = "submenu-hide";
-		}
-	});
-
-}
-
 /* Runs on window load.
 */
 window.addEventListener("load", () => {
-	loadMenu();
 	loadMusic();
 });
 
